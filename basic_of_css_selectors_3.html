@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basics of CSS selectors</title>
+    <style>
+        a {
+            color:black;
+            text-decoration: none;
+        }
+
+        h1{
+            font-size: 45px;
+            text-align: center;
+        }
+
+        .saw{
+            color:grey;
+        }
+
+        .active{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Use of Selectors</h2>
+    <p>What we want to do, is 
+        <ul>
+            <li>Turn every text into colour black</li>
+            <li>Turn the font of visited link to grey</li>
+            To do this, first group the certain texts you want to change the color of 
+            <br> by giving them the attribute ' class="(whatever u want to write)" '.
+            <br> Next, in the style part at the above, create a class by writing '.saw'
+            <br> '.saw' becomes a selector of every text that has saw as its selector. 
+            
+            <li>Turn the colour of the current text of the page into red</li>
+            For this one, we added active part in the tag of the current page, and added a new class of active in the style part. 
+            However, it only works as you put the ' .active ' part below the ' .saw ' part. 
+            <br> Would not work of you changed the order. 
+            <br> So need to use a selector that has a higher priority 
+        </ul>
+
+        <h1><a href="UTF-8">WEB</a></h1>
+        <ol>
+            <li><a href="one.html" class="saw">HTML</a></li>
+            <li><a href="basic_of_css_selectors_3.html" class="saw active">CSS</a></li>
+            <li><a href="css_first.html">JavaScript</a></li>
+        </ol>
+
+        <h2>CSS</h2>
+        <p>
+            Css is a cascading style sheets ==== 
+        </p>
+    </p>
+
+</body>
+</html>
