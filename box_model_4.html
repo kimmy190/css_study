@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model</title>
+    <style>
+        h1, a{
+            border-width:5px;
+            border-color:red;
+            border-style:solid;
+            padding:10px;
+            margin:20px;
+            width:100px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <h1>Box Model</h1>
+    <p> The h1 tage= uses the entire screen, so when you create a borderline, takes up the entire screen.
+        <br><a href="https://www.google.com/">Google</a>
+        <br> However, for a tag, only takes up the specific portion, only the word part. 
+    </p>
+    <p>
+        Although, you can change the h1 part into taking up only a block part by putting another property,
+        <br>display: incline;
+        <br>Also, if want to get rid of all the display effects, just set to none like this : 
+        <br><b>display:none;</b>
+    </p>
+    <p>
+        The code I commented out contains quite similar stuff, so instead of writing each tags, 
+        <br> Used comma to add the tag selectors. 
+        <br> Also, instead of writing all the border tags, it is better to write them in all one sentences.
+        <br>Like this => " <b>border:5px solid red;</b> "  
+    </p>
+
+    <h3>Padding</h3>
+    If want to give a space between the content and the borderline, use padding as a tag and assign pixel values. 
+    Also, can assign bunch of attributes such as ; margin and width so control the design of each boxes. 
+    <!-- 
+        Originally the style code looked like this : 
+        h1{
+            border-width:5px;
+            border-color:red;
+            border-style:solid;
+            display:incline;
+        } 
+
+        a{
+            border-width:5px;
+            border-color:red;
+            border-style:solid;
+            display:block;
+        } 
+    -->
+    <h2>Summary</h2>
+    <p>
+        So when some text takes up all the spaces in the screen, called <b>block level element </b>
+        <br> and when only takes space for that specific text, called <b>inline element. </b>
+        <br>Also, when controlling the size, use ' <b>width</b> ' and ' <b>height</b> '. 
+        <br> <b>Padding</b> is for the space between the contents and borderline 
+        <br> <b>Margin</b> is the space between each borderline when there is more than one boxes.
+    </p>
+</body>
+</html>
