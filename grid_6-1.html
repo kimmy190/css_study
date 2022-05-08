@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Using Grid</title>
+    <style>
+        #grid{
+            border:5px solid pink;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        div {
+            border:5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div>NAVIGATION</div>
+        <div>ARTICLE</div>
+    </div>
+    
+    <p> 
+        If want to surround the existing div part, can create a div class to do that like above. 
+        <br> ' 1fr ' is the tag that uses to take all the remaining spaces. If you use both ' 1fr ' together, 
+        <br> both columns will have the same size, adjusting it to the screen. 
+
+        <br> Also, the size of the grid automatically adjusts depending on the size of the text. 
+
+    </p>
+    <!-- 
+        Div tag is used for no purposes. It does not contain any meaning and only used for 
+        design puposes. 
+        Also, they use the entire screen, block level element so changng the lines are available. 
+        Other similar tag would be span, but that is an inline element so , no change in the lines. 
+
+    -->
+</body>
+</html>
