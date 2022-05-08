@@ -9,18 +9,19 @@
             text-decoration: none;
         }
 
-        h1{
-            font-size: 45px;
-            text-align: center;
+        #active {
+            color:red;
         }
 
         .saw{
             color:grey;
         }
 
-        .active{
-            color:red;
+        h1{
+            font-size: 45px;
+            text-align: center;
         }
+        
     </style>
 </head>
 <body>
@@ -38,13 +39,20 @@
             For this one, we added active part in the tag of the current page, and added a new class of active in the style part. 
             However, it only works as you put the ' .active ' part below the ' .saw ' part. 
             <br> Would not work of you changed the order. 
-            <br> So need to use a selector that has a higher priority 
+            <br> So need to use a selector that has a higher priority. which is <strong>id</strong> selector.
+            <br> and use #active instead of .active in the style class above.
+            <br> And, can use the name of id one.  <b>Cannot be repeated</b>. One and only value
+
+            <br> However, if they share the same selector, for example class, the last one has the highest priority. 
+            <br> but overall, the selectors w highest priority is : id selector(' #active '), class selector(' .saw '), and tag selector(' .a '). 
         </ul>
+
+        <br> Can look up bunch of selectors by looking up 'CSS selectors.'
 
         <h1><a href="UTF-8">WEB</a></h1>
         <ol>
             <li><a href="one.html" class="saw">HTML</a></li>
-            <li><a href="basic_of_css_selectors_3.html" class="saw active">CSS</a></li>
+            <li><a href="basic_of_css_selectors_3.html" class="saw" id="active">CSS</a></li>
             <li><a href="css_first.html">JavaScript</a></li>
         </ol>
 
