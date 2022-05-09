@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <style>
+        #grid{
+            display: grid;
+            grid-template-columns: 170px 1fr;
+        }
+
+        h2{
+            border-right: 1px solid red;
+        }
+
+        p{
+            margin-left: 10px;
+        }
+
+        #responsive{
+            border:10px solid green;
+            font-size: 60px;
+        }
+        
+        
+        @media(max-width:800px) {
+            #responsive{
+                display:none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <h2>Media Query</h2>
+        <p>Media queries is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution.</p>
+    </div>
+
+    <p>
+        Basically wrote a code of how the text disappears when the screen size < 800px , use max-width is 800.
+        <br> If want to disappear the text when the screen size > 800px, use min-width.
+    </p>
+    <div id="responsive">
+        Responsive
+    </div>
+    
+</body>
+</html>
