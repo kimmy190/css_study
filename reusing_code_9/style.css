@@ -5,6 +5,7 @@
 
 body{
     margin:0px;
+    background-color: coral;
 }
 
 a{
@@ -15,22 +16,27 @@ a{
 h1{
     font-size: 70px;
     font-family: "Times New Roman", Times, serif;
+    font-weight:bolder;
     text-align: center;
-    border-bottom: 1.5px solid salmon;
+    border-bottom: 1.5px solid wheat;
     margin:0px;
     padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 #grid ol{
-    border-right: 1.5px solid salmon;
+    border-right: 1.5px solid wheat;
     width: 150px;
     margin:0px;
     padding-right:25px;
     padding-top: 20px;
+    font-size: 20px;
 }
+    /* line weight is basically the size between each lines */
 
 #article{
     padding-left: 0px;
+    font-size: 20px;
 }
 
 @media(max-width:800px){
